@@ -1,3 +1,14 @@
 <ion-view title="讨论">
-
+  <div ng-repeat="message in messages">
+    <p>{{message}}</p>
+  </div>
+  <div class="buttons">
+    <button class="button button-icon" ng-click="enterRoom(1)">Room1</button>
+    <button class="button button-icon" ng-click="enterRoom(2)">Room2</button>
+    <button class="button button-icon" ng-click="quitRoom()">退出房间</button>
+  </div>
+  <div class="inputContainer">
+    <input class="input" ng-model="text"/>
+    <button class="comment_button" ng-click="publishComment()" > 发表</button>
+  </div>
 </ion-view>
