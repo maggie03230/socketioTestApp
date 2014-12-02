@@ -1,0 +1,8 @@
+{
+  "name": "donler-app",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "ionic": "1.0.0-beta.13",
+  }
+}

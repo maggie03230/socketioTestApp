@@ -1,0 +1,8 @@
+{
+  "name": "donler",
+  "version": "1.0.0",
+  "description": "donler: An Ionic project",
+  "devDependencies": {
+    "bower": "^1.3.3"
+  }
+}
