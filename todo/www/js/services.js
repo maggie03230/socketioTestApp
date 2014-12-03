@@ -5,7 +5,7 @@
 angular.module('starter.services', [])
 
 .factory('Global', function($state, $ionicActionSheet, $timeout) {
-  var socket_url = "http://192.168.2.100:3700";
+  var socket_url = "http://192.168.2.107:3700";
   return {
     socket_url: socket_url
   };
@@ -23,7 +23,6 @@ angular.module('starter.services', [])
       });
     },
     emit: function (eventName, data, callback) {
-      console.log('emit');
       socket.emit(eventName, data, function () {
         var args = arguments;
         $rootScope.$apply(function () {
